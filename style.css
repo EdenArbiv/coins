@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Genos', sans-serif;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+
+.navbarr{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+}
+
+.page1 ,.page2 , .page3 {
+    border: 0;
+    position: relative;
+    margin: 0% 2%;
+    background: none;
+}
+
+.form-control{
+    
+    position: relative;
+    top: 15%;
+    height: 70%;
+   
+}
+#btn1{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid silver;
+    background-color: #fff;
+    height: 70%;
+    top: 15%;
+}
+
+
+.parallax {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url("https://img1.wallspic.com/previews/7/4/4/5/5/155447/155447-gold_coin-the_royal_mint-gold-bullion_coin-coin-x750.jpg");
+    min-height: 40%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coins{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap:wrap ;
+    padding: 2% 8%;
+
+}
+.form-check{
+    position: absolute;
+    right: 0;
+    top: 15%;
+}
+
+@media screen and (max-width: 768px) {  
+    .navbarr{
+        height: 20%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .me-2{
+        max-width: 60%;
+    }
+}
+
+.img-fluid{
+    width: 350px;
+    height: 300px;
+    border-radius:20%;
+    position: relative;
+}
+
+#smaller{
+    width: 25px;
+    height: 25px;
+}
+.loader{
+    
+    position: fixed;
+    z-index: 999;
+    margin-left: 45%;
+    margin-top: 20%;
+    border: 14px solid #f3f3f3; /* Light grey */
+    border-top: 14px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.changebtn{
+    position: fixed;
+    z-index: 989;
+    width: 60vw;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 15%;
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    
+}
+.canc{
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+}
+
+.minicd{
+    transform: translate(50% 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
